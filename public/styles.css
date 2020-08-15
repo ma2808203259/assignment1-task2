@@ -1,0 +1,39 @@
+body{
+  background-color:#64b5f6 ;
+}
+  #match{
+    
+    height: 550;
+    width: 500;
+    background-size: cover;
+    margin-left: 650px;
+
+  }
+#matchPicture{
+  margin: 0 auto;
+  position: relative;
+}
+#result{
+  font-size: xx-large;
+  
+}
+
+#loginInfo{
+  font-size: xx-large;
+  margin-left: 650px;
+}
+#modalLogin{
+  background-color: #212121  ;
+}
+
+#introduction{
+  font-size: xx-large;
+}
+#personDetail{
+  height: 70;
+    width: 500;
+    background-color: #a5d6a7 ;
+    margin-left: 650px;
+}
+
+

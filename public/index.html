@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>Sit725 week4</title>
+    <title>Tinder like application</title>
     <script src="https://code.jquery.com/jquery-3.5.1.js"
         integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <!-- Compiled and minified CSS -->
@@ -10,12 +10,100 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="env.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <!-- swipe listener  -->
+    <script src="https://unpkg.com/swipe-listener@latest/dist/swipe-listener.min.js" type="text/javascript"></script>
 </head>
 
 <body>
-    <h1>Hello</h1>
-    
+    <div class="row">
+        <!-- the user card to display the information of the user -->
+        <div class="col s12 l5 " id="userCard" style="visibility: hidden">
+            <div class="card-panel grey lighten-5 z-depth-1">
+                <div class="row valign-wrapper">
+                    <div>
+                        <img src="assets/user_icon_004.jpg" alt="" class="circle responsive-img " width="50"
+                            height="50">
+                    </div>
+                    <div class="row" id="profile">
 
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <!-- button for modal -->
+        <a class="waves-effect waves-light btn modal-trigger" href="#modalLogin" style="float: right;"
+            id="loginBtn">create profile</a>
+
+    </div>
+
+    <!-- give user information to create profile before using -->
+    <div id="loginInfo">Create you profile before you start</div>
+
+    <!-- tells user how to use the application -->
+    <div class="row">
+        <div class="col s6 push-s4" style="visibility: hidden;" id="introduction">Swipe left if you like this person,or
+            not swipe right</div>
+        <!-- display the result at the end -->
+        <div class="col s6 push-s4" id="result"></div>
+    </div>
+    <!-- place to display the people -->
+    <div id="container" style="visibility: hidden">
+        <div class="row">
+            <div class="col s6 " id="match">
+            </div>
+
+        </div>
+
+
+        <div class="row" id="personDetail">
+
+            <div class="col s3 push-s4">Name:</div>
+            <div class="col s3 push-s3">Age:</div>
+            <div class="section"></div>
+            <div class="col s3 push-s4" id="name"></div>
+            <div class="col s3 push-s3" id="age"></div>
+        </div>
+    </div>
+    </div>
 </body>
-
 </html>
+
+
+<!-- Modal Structure -->
+<div id="modalLogin" class="modal">
+    <div class="modal-content">
+        <h4>Create profile</h4>
+        <div class="row">
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input id="first_name" type="text" class="validate">
+                        <label for="first_name">First Name</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="last_name" type="text" class="validate">
+                        <label for="last_name">Last Name</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input type="number" id="userAge" class="validate">
+                        <label for="userAge">age</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input type="text" id="gender" class="validate">
+                        <label for="gender">Gender</label>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+
+    </div>
+    <div class="modal-footer">
+        <a onclick="createProfile()" href="#!" class="modal-close waves-effect waves-green btn-flat">Create</a>
+    </div>
+</div>
