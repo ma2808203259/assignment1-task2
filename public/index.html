@@ -53,9 +53,28 @@
     <div id="container" style="visibility: hidden">
         <div class="row">
             <div class="col s6 " id="match">
+
+            </div>
+            <div class="col s4" style="position: fixed;">
+                <nav>
+                    <div class="nav-wrapper">
+                        <a href="" class="brand-logo">Match list</a>
+                        <ul id="nav-mobile" class="right hide-on-med-and-down">
+
+                        </ul>
+                    </div>
+                </nav>
+                <div class="collection" id="matchList">
+
+
+
+                </div>
             </div>
 
+
+
         </div>
+
 
 
         <div class="row" id="personDetail">
@@ -69,6 +88,7 @@
     </div>
     </div>
 </body>
+
 </html>
 
 
@@ -105,5 +125,18 @@
     </div>
     <div class="modal-footer">
         <a onclick="createProfile()" href="#!" class="modal-close waves-effect waves-green btn-flat">Create</a>
+    </div>
+</div>
+
+<div id="matchModal" class="modal">
+    <div class="modal-content">
+        <div class="row">
+            <img class="col s4 materialboxed circle " width="40" src="assets/user_icon_004.jpg">
+            <h2 class="col s4 " id="matchMessage"></h2>
+            <img class="col s4 materialboxed circle" width="40" src="assets/user_icon_004.jpg" id="matchImage">
+        </div>
+    </div>
+    <div class="modal-footer">
+        <a id="matchModalBtn" href="#!" class="modal-close waves-effect waves-green btn-flat">Confirm</a>
     </div>
 </div>

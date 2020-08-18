@@ -1,39 +1,50 @@
-body{
-  background-color:#64b5f6 ;
+body {
+  background-color: #64b5f6;
 }
-  #match{
-    
-    height: 550;
-    width: 500;
-    background-size: cover;
-    margin-left: 650px;
 
-  }
-#matchPicture{
+#match {
+
+  height: 550;
+  width: 500;
+  background-size: cover;
+  margin-left: 650px;
+
+}
+
+#matchPicture {
   margin: 0 auto;
   position: relative;
 }
-#result{
+
+#result {
   font-size: xx-large;
-  
+
 }
 
-#loginInfo{
+#loginInfo {
   font-size: xx-large;
   margin-left: 650px;
 }
-#modalLogin{
-  background-color: #212121  ;
+
+#modalLogin {
+  background-color: #212121;
 }
 
-#introduction{
+#introduction {
   font-size: xx-large;
 }
-#personDetail{
+
+#personDetail {
   height: 70;
-    width: 500;
-    background-color: #a5d6a7 ;
-    margin-left: 650px;
+  width: 500;
+  background-color: #a5d6a7;
+  margin-left: 650px;
 }
 
+#matchMessage {
+  color: #212121;
+}
 
+#matchModal {
+  background-color: #f48fb1;
+}
